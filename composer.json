@@ -25,6 +25,7 @@
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drupal/core-vendor-hardening": "^8.8",
+        "drupal/devel": "^4.1",
         "drupal/search_api_pantheon": "dev-3185736-upgrade-for-search"
     },
     "conflict": {
