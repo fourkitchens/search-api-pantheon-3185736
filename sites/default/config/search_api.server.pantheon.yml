@@ -1,0 +1,40 @@
+uuid: 29dbd55d-c838-4756-bdb4-772d0de6d688
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api_solr.solr_field_type.text_edge_und_3_6_0
+    - search_api_solr.solr_field_type.text_edgestring_und_3_6_0
+    - search_api_solr.solr_field_type.text_en_3_6_0
+    - search_api_solr.solr_field_type.text_ngram_und_3_6_0
+    - search_api_solr.solr_field_type.text_ngramstring_und_3_6_0
+    - search_api_solr.solr_field_type.text_und_3_6_0
+  module:
+    - search_api_pantheon
+    - search_api_solr
+id: pantheon
+name: pantheon
+description: ''
+backend: search_api_solr
+backend_config:
+  connector: pantheon
+  connector_config:
+    schema: modules/contrib/search_api_pantheon/solr_conf/schema.xml
+  disabled_field_types: {  }
+  disabled_caches: {  }
+  disabled_request_handlers:
+    - request_handler_elevate_default_7_0_0
+    - request_handler_replicationmaster_default_7_0_0
+    - request_handler_replicationslave_default_7_0_0
+  disabled_request_dispatchers:
+    - request_dispatcher_httpcaching_default_7_0_0
+  rows: 10
+  index_single_documents_fallback_count: 10
+  retrieve_data: false
+  highlight_data: false
+  fallback_multiple: false
+  server_prefix: ''
+  domain: generic
+  environment: default
+  optimize: false
+  site_hash: false
