@@ -1,0 +1,6 @@
+name: search-api-pantheon-3185736
+recipe: pantheon
+config:
+  framework: drupal8
+  site: search-api-pantheon-3185736
+  id: aa85bd5f-3034-409e-b8b2-6469413be1e4
